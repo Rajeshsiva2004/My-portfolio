@@ -1,0 +1,149 @@
+{
+  "personal": {
+    "name": "Rajesh S",
+    "title": "Data Analyst",
+    "tagline": "Turning raw data into decisions",
+    "summary": "Results-driven Data Analyst with hands-on experience in Python, PostgreSQL, Excel, Pandas, NumPy, data cleaning, data analysis, statistical analysis, and data visualization. Experienced in developing data-driven projects involving data preprocessing, exploratory data analysis (EDA), machine learning, and reporting. Proficient in transforming raw data into actionable insights using analytical tools and techniques. Familiar with Power BI, dashboard development, ETL workflows, Git, and database management. Eager to contribute analytical, problem-solving, and data-driven decision-making skills as a Junior Data Analyst.",
+    "email": "sivarajesh2404@gmail.com",
+    "phone": "+91 93452 68271",
+    "location": "Chennai, Tamil Nadu",
+    "linkedin": "https://www.linkedin.com/in/rajeshsiva2404",
+    "github": "https://github.com/Rajeshsiva2004",
+    "profileImage": "assets/profile/profile.jpg",
+    "resumeFile": "assets/resume/resume.pdf"
+  },
+  "skills": [
+    {
+      "category": "Programming & Data Analysis",
+      "items": ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "HTML5", "CSS3"]
+    },
+    {
+      "category": "SQL & Databases",
+      "items": ["PostgreSQL", "MongoDB"]
+    },
+    {
+      "category": "Data Visualization",
+      "items": ["Power BI", "Tableau", "Excel Charts", "Dashboards"]
+    },
+    {
+      "category": "Microsoft Excel",
+      "items": ["Pivot Tables", "VLOOKUP/XLOOKUP", "INDEX-MATCH", "IF Functions", "Data Cleaning"]
+    },
+    {
+      "category": "Statistics",
+      "items": ["Descriptive Statistics", "Mean", "Median", "Mode"]
+    },
+    {
+      "category": "Reporting",
+      "items": ["Data Visualization", "Dashboard Development", "KPI Reporting", "Business Reporting"]
+    },
+    {
+      "category": "Tools & Technologies",
+      "items": ["Jupyter Notebook", "Git", "GitHub"]
+    }
+  ],
+  "experience": [
+    {
+      "role": "Python Full-Stack Developer Intern",
+      "company": "Femtosoft Technologies",
+      "location": "Chennai",
+      "duration": "Jun 2025 – Jul 2025",
+      "points": [
+        "Built and deployed 3 full-stack web applications using Python Flask with MVC architecture, integrating MySQL and MongoDB databases, reducing average data retrieval latency by 30%.",
+        "Designed and tested 15+ REST API endpoints using Postman; implemented server-side validation and structured error handling following production-ready coding standards.",
+        "Maintained a clean, version-controlled codebase via Git across all sprint deliverables in an agile team environment with documented commit history."
+      ]
+    },
+    {
+      "role": "Web Development Intern",
+      "company": "INTERNPE",
+      "location": "Remote",
+      "duration": "Jul 2024 – Aug 2024",
+      "points": [
+        "Engineered 5+ responsive, cross-browser-compatible web interfaces using HTML5, CSS3, and JavaScript; applied Flexbox/Grid layouts achieving consistent rendering across Chrome, Firefox, and Safari.",
+        "Implemented semantic markup and WCAG-compliant UI/UX design principles; optimised CSS and eliminated render-blocking resources to improve page load efficiency.",
+        "Delivered all project milestones on schedule, receiving positive feedback for code readability and component reusability."
+      ]
+    },
+    {
+      "role": "Business Development Associate Intern",
+      "company": "BDA Organization",
+      "location": "Chennai",
+      "duration": "2024 (1 Month)",
+      "points": [
+        "Executed lead generation and CRM data management workflows; maintained 100% data accuracy across client records and strengthened cross-functional communication and analytical skills."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "NLP-Based Hate Speech & Toxic Comment Detection",
+      "shortDescription": "Multi-label text classifier for automated content moderation.",
+      "problem": "Manual content moderation is slow and unscalable across high-volume platforms.",
+      "solution": "Built a multi-label text classifier (TF-IDF + Logistic Regression) achieving 91% accuracy across 6 toxicity categories on a 150K+ comment dataset (Kaggle Jigsaw). Deployed via Flask REST API with avg. response latency under 200 ms; integrated a JSON-based request/response pipeline suitable for production CMS integration.",
+      "technologies": ["Python", "Scikit-learn", "TF-IDF", "Flask", "REST API", "Postman", "Git"],
+      "results": [
+        "91% accuracy across 6 toxicity categories",
+        "150K+ comment dataset (Kaggle Jigsaw)",
+        "Avg. response latency under 200 ms"
+      ],
+      "github": "https://github.com/Rajeshsiva2004",
+      "demo": "",
+      "image": "",
+      "featured": true
+    },
+    {
+      "title": "TripAlert Pro – Real-Time Travel Safety Platform",
+      "shortDescription": "Full-stack app delivering live route safety alerts and geolocation notifications.",
+      "problem": "Travelers lack instant access to route safety data and emergency resources.",
+      "solution": "Developed a full-stack web app with live route safety alerts and geolocation-based notifications; stored and queried 500+ location records in MongoDB with indexed queries. Reduced alert retrieval time by 40% through MongoDB index optimisation and async JS fetch calls; deployed backend on Render and frontend on Vercel with 8 documented API endpoints.",
+      "technologies": ["HTML5", "CSS3", "JavaScript", "MongoDB", "REST API", "Render", "Vercel"],
+      "results": [
+        "500+ location records indexed in MongoDB",
+        "40% faster alert retrieval",
+        "8 documented API endpoints"
+      ],
+      "github": "https://github.com/Rajeshsiva2004",
+      "demo": "",
+      "image": "",
+      "featured": true
+    },
+    {
+      "title": "Dual-Mode AI Chatbot",
+      "shortDescription": "Mode-switching Flask chatbot for professional Q&A and casual conversation.",
+      "problem": "Generic chatbots fail users who need both professional Q&A and casual conversation in one interface.",
+      "solution": "Engineered a mode-switching Flask backend with intelligent intent routing that automatically classifies requests and adapts response logic, improving session engagement by 35%. Implemented JWT-based session management; achieved under 100 ms round-trip API latency across 50+ tested conversation flows with zero session bleed-through.",
+      "technologies": ["Python Flask", "JavaScript", "HTML5", "CSS3", "REST API", "JWT"],
+      "results": [
+        "35% improvement in session engagement",
+        "<100 ms round-trip API latency",
+        "50+ tested conversation flows, zero session bleed-through"
+      ],
+      "github": "https://github.com/Rajeshsiva2004",
+      "demo": "",
+      "image": "",
+      "featured": false
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.Tech – Information Technology",
+      "institution": "S.A. Engineering College, Chennai",
+      "years": "2022 – 2026",
+      "cgpa": "CGPA: 7.50 / 10.0"
+    }
+  ],
+  "certifications": [
+    { "name": "Full Stack Development – Client Side (Frontend)", "url": "" },
+    { "name": "Full Stack Development – Server Side (Backend)", "url": "" },
+    { "name": "Python with MongoDB – Database Integration & NoSQL", "url": "" },
+    { "name": "Kotlin & Python Programming Fundamentals", "url": "" },
+    { "name": "Web Development Workshop – Responsive Design & Best Practices", "url": "" }
+  ],
+  "additional": {
+    "languages": "English (Professional Proficiency) · Tamil (Native)",
+    "dsa": "Actively solving LeetCode problems – Arrays, Strings, HashMaps, Recursion",
+    "openSource": "Personal GitHub repositories with documented READMEs and live project demos",
+    "availability": "Immediately available for full-time roles · Open to Hybrid / In-Office / Remote"
+  }
+}

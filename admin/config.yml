@@ -1,0 +1,90 @@
+backend:
+  name: github
+  repo: YOUR_GITHUB_USERNAME/YOUR_REPO_NAME   # e.g. rajeshsiva2004/rajesh-portfolio
+  branch: main
+  base_url: https://YOUR_PROJECT.vercel.app   # your deployed Vercel URL, no trailing slash
+  auth_endpoint: api/auth
+
+# Enables drag-and-drop upload of the profile photo, resume PDF, and project images.
+# Files land in the GitHub repo under this path via the GitHub API — no separate storage service.
+media_folder: "assets/uploads"
+public_folder: "assets/uploads"
+
+publish_mode: simple
+
+collections:
+  - name: "portfolio"
+    label: "Portfolio Content"
+    files:
+
+      # ----- PERSONAL / SETTINGS -----
+      - name: "personal"
+        label: "Personal Info & Links"
+        file: "content/content.json"
+        fields:
+          - label: "Personal Information"
+            name: "personal"
+            widget: "object"
+            fields:
+              - { label: "Full Name", name: "name", widget: "string" }
+              - { label: "Professional Title", name: "title", widget: "string" }
+              - { label: "Short Tagline", name: "tagline", widget: "string" }
+              - { label: "Professional Summary", name: "summary", widget: "text" }
+              - { label: "Email", name: "email", widget: "string" }
+              - { label: "Phone", name: "phone", widget: "string" }
+              - { label: "Location", name: "location", widget: "string" }
+              - { label: "LinkedIn URL", name: "linkedin", widget: "string" }
+              - { label: "GitHub URL", name: "github", widget: "string" }
+              - { label: "Profile Image", name: "profileImage", widget: "image" }
+              - { label: "Resume PDF", name: "resumeFile", widget: "file" }
+          - label: "Skills"
+            name: "skills"
+            widget: "list"
+            fields:
+              - { label: "Category Name", name: "category", widget: "string" }
+              - { label: "Skills in this category", name: "items", widget: "list" }
+          - label: "Internship Experience"
+            name: "experience"
+            widget: "list"
+            fields:
+              - { label: "Role / Job Title", name: "role", widget: "string" }
+              - { label: "Company", name: "company", widget: "string" }
+              - { label: "Location", name: "location", widget: "string" }
+              - { label: "Duration", name: "duration", widget: "string" }
+              - { label: "Responsibilities (one per line)", name: "points", widget: "list" }
+          - label: "Projects"
+            name: "projects"
+            widget: "list"
+            fields:
+              - { label: "Project Title", name: "title", widget: "string" }
+              - { label: "Short Description (for card)", name: "shortDescription", widget: "string" }
+              - { label: "Problem", name: "problem", widget: "text" }
+              - { label: "Solution / Technical Implementation", name: "solution", widget: "text" }
+              - { label: "Technologies", name: "technologies", widget: "list" }
+              - { label: "Results / Metrics", name: "results", widget: "list", required: false }
+              - { label: "GitHub URL", name: "github", widget: "string", required: false }
+              - { label: "Live Demo URL", name: "demo", widget: "string", required: false }
+              - { label: "Project Image", name: "image", widget: "image", required: false }
+              - { label: "Featured Project", name: "featured", widget: "boolean", default: false }
+          - label: "Education"
+            name: "education"
+            widget: "list"
+            fields:
+              - { label: "Degree", name: "degree", widget: "string" }
+              - { label: "Institution", name: "institution", widget: "string" }
+              - { label: "Years", name: "years", widget: "string" }
+              - { label: "CGPA / Grade", name: "cgpa", widget: "string", required: false }
+          - label: "Certifications"
+            name: "certifications"
+            widget: "list"
+            fields:
+              - { label: "Certification Name", name: "name", widget: "string" }
+              - { label: "Credential URL", name: "url", widget: "string", required: false }
+          - label: "Additional Information"
+            name: "additional"
+            widget: "object"
+            fields:
+              - { label: "Languages", name: "languages", widget: "string", required: false }
+              - { label: "DSA Practice", name: "dsa", widget: "string", required: false }
+              - { label: "Open Source", name: "openSource", widget: "string", required: false }
+              - { label: "Availability", name: "availability", widget: "string", required: false }

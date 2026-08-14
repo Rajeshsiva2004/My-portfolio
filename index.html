@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rajesh S — Data Analyst Portfolio</title>
+<meta name="description" content="Rajesh S — Data Analyst skilled in Python, SQL, Power BI, and data visualization. View projects, internship experience, and download resume.">
+<meta name="theme-color" content="#1C1B19">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Rajesh S — Data Analyst Portfolio">
+<meta property="og:description" content="Data Analyst skilled in Python, SQL, Power BI, and data visualization. Explore projects, experience, and resume.">
+<meta property="og:image" content="assets/profile/profile.jpg">
+
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">RS<span class="dot">.</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Primary">
+      <a href="#about" data-nav>About</a>
+      <a href="#skills" data-nav>Skills</a>
+      <a href="#experience" data-nav>Experience</a>
+      <a href="#projects" data-nav>Projects</a>
+      <a href="#education" data-nav>Education</a>
+      <a href="#certifications" data-nav>Certifications</a>
+      <a href="#contact" data-nav>Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-grid">
+      <div class="hero-copy" data-reveal>
+        <p class="eyebrow"><span class="eyebrow-tick"></span>DATA ANALYST — CHENNAI</p>
+        <h1 class="hero-name" id="heroName">Rajesh S</h1>
+        <p class="hero-role" id="heroRole">Data Analyst</p>
+        <p class="hero-tagline" id="heroTagline">Turning raw data into decisions</p>
+        <p class="hero-intro" id="heroIntro"></p>
+        <div class="hero-actions">
+          <a href="#" id="viewResumeBtn" class="btn btn-primary" target="_blank" rel="noopener">View Resume</a>
+          <a href="#" id="linkedinBtn" class="btn btn-ghost" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="#" id="githubBtn" class="btn btn-ghost" target="_blank" rel="noopener">GitHub</a>
+          <a href="#contact" class="btn btn-text">Contact →</a>
+        </div>
+      </div>
+      <div class="hero-media" data-reveal>
+        <div class="hero-photo-backdrop" aria-hidden="true"></div>
+        <div class="hero-axis" aria-hidden="true"></div>
+        <div class="hero-photo-frame">
+          <img id="heroImage" src="assets/profile/profile.jpg" alt="Portrait of Rajesh S" width="420" height="420">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="section-inner">
+      <p class="section-eyebrow">01 — About</p>
+      <h2 class="section-title">Profile</h2>
+      <p class="about-text" id="aboutSummary" data-reveal></p>
+    </div>
+  </section>
+
+  <div class="axis-divider" aria-hidden="true"></div>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="section-inner">
+      <p class="section-eyebrow">02 — Skills</p>
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid" id="skillsGrid"></div>
+    </div>
+  </section>
+
+  <div class="axis-divider" aria-hidden="true"></div>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="section-inner">
+      <p class="section-eyebrow">03 — Experience</p>
+      <h2 class="section-title">Internship Experience</h2>
+      <div class="timeline" id="experienceList"></div>
+    </div>
+  </section>
+
+  <div class="axis-divider" aria-hidden="true"></div>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="section-inner">
+      <p class="section-eyebrow">04 — Projects</p>
+      <h2 class="section-title">Selected Projects</h2>
+      <div class="projects-grid" id="projectsGrid"></div>
+    </div>
+  </section>
+
+  <div class="axis-divider" aria-hidden="true"></div>
+
+  <!-- EDUCATION -->
+  <section class="section" id="education">
+    <div class="section-inner">
+      <p class="section-eyebrow">05 — Education</p>
+      <h2 class="section-title">Education</h2>
+      <div class="education-list" id="educationList"></div>
+    </div>
+  </section>
+
+  <div class="axis-divider" aria-hidden="true"></div>
+
+  <!-- CERTIFICATIONS -->
+  <section class="section" id="certifications">
+    <div class="section-inner">
+      <p class="section-eyebrow">06 — Certifications</p>
+      <h2 class="section-title">Certifications</h2>
+      <ul class="cert-list" id="certList"></ul>
+    </div>
+  </section>
+
+  <div class="axis-divider" aria-hidden="true"></div>
+
+  <!-- ADDITIONAL -->
+  <section class="section" id="additional">
+    <div class="section-inner">
+      <p class="section-eyebrow">07 — Additional</p>
+      <h2 class="section-title">Additional Information</h2>
+      <div class="additional-grid" id="additionalGrid"></div>
+    </div>
+  </section>
+
+  <div class="axis-divider" aria-hidden="true"></div>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="section-inner">
+      <p class="section-eyebrow">08 — Contact</p>
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="contact-lead">Open to Junior Data Analyst roles — hybrid, in-office, or remote.</p>
+      <div class="contact-grid" id="contactGrid"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <p>© <span id="year"></span> Rajesh S. Built with HTML, CSS &amp; JavaScript.</p>
+    <a href="admin/" class="footer-admin">Admin</a>
+  </div>
+</footer>
+
+<!-- PROJECT MODAL -->
+<div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+  <div class="modal">
+    <button class="modal-close" id="modalClose" aria-label="Close project details">&times;</button>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
